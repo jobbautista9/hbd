@@ -78,13 +78,14 @@ cr_hb3=`tune "$hb3"`
 cr_end=`tune "$end"`
 
 MUSIC="$cr_main1$cr_hb1$cr_main1$cr_hb2$cr_main2$cr_hb3$cr_end"
+end2="$cr_main2$cr_hb3$cr_end"
 
 if which aplay &>/dev/null ; then
-	( echo -n "$MUSIC" | aplay ) &>/dev/null
+	( echo -n "$MUSIC$MUSIC$end2" | aplay ) &>/dev/null
 elif [ -c /dev/dsp ] ; then
-	( echo -n "$MUSIC" > /dev/dsp ) &>/dev/null
+	( echo -n "$MUSIC$MUSIC$end2" > /dev/dsp ) &>/dev/null
 elif [ -c /dev/dsp1 ] ; then
-	( echo -n "$MUSIC" > /dev/dsp1 ) &>/dev/null
+	( echo -n "$MUSIC$MUSIC$end2" > /dev/dsp1 ) &>/dev/null
 else
 	echo "Neither OSS nor ALSA is installed on your system. Exiting."
 	sleep 1
