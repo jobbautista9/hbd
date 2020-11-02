@@ -18,7 +18,7 @@ function hb {
 	sleep 0.25
 }
 
-sleep 0.5
+sleep 0.55
 hb
 printf "to "
 sleep 0.5
@@ -36,7 +36,7 @@ hb
 printf "\n""Ha"
 sleep 0.5
 printf "p"
-sleep 0.5
+sleep 0.25
 printf "py "
 sleep 0.25
 printf "birth"
@@ -47,6 +47,70 @@ printf "to "
 sleep 0.5
 printf "you!""\n\n"
 sleep 1
+
+function mgb {
+	printf "Ma"
+	sleep 0.5
+	printf "li"
+	sleep 0.25
+	printf "gaya"
+	sleep 0.25
+}
+
+mgb
+printf "ng "
+sleep 0.25
+printf "ba"
+sleep 0.25
+printf "ti!""\n"
+sleep 1
+
+mgb
+printf "ng "
+sleep 0.25
+printf "ba"
+sleep 0.25
+printf "ti!""\n"
+sleep 1.2
+
+mgb
+printf "\n"
+mgb
+printf "\n""Ma"
+sleep 0.5
+printf "l"
+sleep 0.25
+printf "i"
+sleep 0.25
+printf "gaya"
+sleep 0.25
+printf "ng "
+sleep 0.25
+printf "ba"
+sleep 0.25
+printf "ti!""\n"
+sleep 1.2
+
+mgb
+printf "\n"
+mgb
+printf "\n""Ma"
+sleep 0.5
+printf "l"
+sleep 0.25
+printf "i"
+sleep 0.25
+printf "gaya"
+sleep 0.25
+printf "ng "
+sleep 0.25
+printf "ba"
+sleep 0.25
+printf "ti!"
+sleep 1
+
+printf "\n""\n"
+sleep 0.5
 
 echo "Happy $AGE birthday $NAME!"
 echo "Written by Job Bautista"

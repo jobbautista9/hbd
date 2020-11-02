@@ -49,7 +49,7 @@ function note { # $1 = pitch (Hz) $2 = duration (bytes)
 }
 
 # Smaller value = faster tempo
-declare -r TEMPO=800
+declare -r TEMPO=750
 
 function tune { # $1 = List of notes in the format pitch(Hz):duration(note)
 	for n in $1 ; do
